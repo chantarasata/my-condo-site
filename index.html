@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--  SEO Meta Tags -->
+    <title>ขายห้องชุด พรปิยะแมนชัน บางโพ ชั้น 12 ราคา 9 แสน - เจ้าของขายเอง</title>
+    <meta name="description" content="ขายด่วน! สตูดิโอ พรปิยะแมนชัน บางโพ ชั้น 12 วิวสวย ใกล้ MRT บางโพ ทางด่วนรัฐสภา เอกสารครบโอนง่าย ราคาเพียง 900,000 บาท เจ้าของขายโดยตรง โทร 0808255506">
+    <meta name="keywords" content="ขายคอนโด, พรปิยะแมนชัน, บางโพ, คอนโดราคาถูก, ขายห้องชุด, เจ้าของขายเอง, MRT บางโพ, คอนโดใกล้ทางด่วน, คอนโดเกียกกาย, ขายคอนโดบางโพ">
+    
+    <!--  Open Graph (สำหรับแชร์ Facebook/Line) -->
+    <meta property="og:title" content="ขายด่วน! พรปิยะแมนชัน บางโพ ชั้น 12 (ราคา 900,000 บาท)">
+    <meta property="og:description" content="ห้องสวย ชั้นสูง ใกล้ MRT บางโพ เอกสารครบ เจ้าของขายเอง ติดต่อเลย!">
+    <meta property="og:image" content="room1.jpeg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-site.vercel.app">
+
+    <!-- 🔤 ฟอนต์ไทย -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ==========================================
+           BASE STYLES
+           ========================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background: #f5f5f5;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .brochure {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            padding: 15mm;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* ==========================================
+           HEADER & PRICE
+           ========================================== */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .header h1 { font-size: 32px; font-weight: 700; margin-bottom: 10px; }
+        .header .subtitle { font-size: 18px; font-weight: 300; }
+        .price-tag {
+            background: #ff6b6b;
+            color: white;
+            display: inline-block;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(255,107,107,0.4);
+        }
+
+        /* ==========================================
+           IMAGE GALLERY
+           ========================================== */
+        .property-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .main-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .main-image:hover { transform: scale(1.02); }
+
+        /* ==========================================
+           PROPERTY INFO (2 Columns)
+           ========================================== */
+        .property-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .info-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .info-box h3 { color: #667eea; font-size: 16px; margin-bottom: 10px; font-weight: 600; }
+        .info-box p { font-size: 14px; color: #555; line-height: 1.8; }
+        .info-box .label { font-weight: 600; color: #333; }
+
+        /* ==========================================
+           LOCATION (2 Columns)
+           ========================================== */
+        .location {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 4px solid #ffc107;
+        }
+        .location h3 { color: #856404; margin-bottom: 15px; font-size: 18px; font-weight: 600; text-align: center; }
+        .location ul {
+            list-style: none;
+            font-size: 14px;
+            color: #856404;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        .location li {
+            padding: 10px 10px 10px 35px;
+            position: relative;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 6px;
+        }
+        .location li::before { content: "📍"; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); }
+
+        /* ==========================================
+           FEATURES & INVESTMENT
+           ========================================== */
+        .features { margin-bottom: 25px; }
+        .section-title {
+            background: #667eea;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+        .feature-item {
+            background: #fff; border: 2px solid #e0e0e0; padding: 12px;
+            border-radius: 6px; display: flex; align-items: center; font-size: 14px;
+        }
+        .feature-item::before {
+            content: "✓"; background: #4CAF50; color: white; width: 24px; height: 24px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            margin-right: 10px; font-weight: bold; flex-shrink: 0;
+        }
+
+        .investment {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; padding: 20px; border-radius: 8px; margin-bottom: 25px;
+        }
+        .investment h3 { font-size: 18px; margin-bottom: 10px; text-align: center; }
+        .investment > p { text-align: center; margin-bottom: 15px; }
+        .investment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .investment-item { background: rgba(255,255,255,0.2); padding: 15px; border-radius: 6px; text-align: center; }
+        .investment-item .number { font-size: 28px; font-weight: 700; }
+        .investment-item .text { font-size: 13px; margin-top: 5px; opacity: 0.95; }
+
+        /* ==========================================
+           CONTACT & FOOTER
+           ========================================== */
+        .contact {
+            background: #2c3e50; color: white; padding: 30px;
+            border-radius: 10px; text-align: center;
+        }
+        .contact h2 { font-size: 24px; margin-bottom: 15px; }
+        .contact > div:first-of-type { font-size: 16px; margin-bottom: 15px; opacity: 0.95; }
+        .phone-number {
+            background: #ff6b6b; color: white; font-size: 36px; font-weight: 700;
+            padding: 15px 40px; border-radius: 50px; display: inline-block;
+            margin: 15px 0; box-shadow: 0 5px 15px rgba(255,107,107,0.4);
+        }
+        .contact-note { margin-top: 20px; font-size: 14px; opacity: 0.9; line-height: 1.8; }
+        .footer {
+            text-align: center; margin-top: 20px; padding-top: 20px;
+            border-top: 2px solid #e0e0e0; font-size: 12px; color: #888;
+        }
+
+        /* ==========================================
+           🖨️ PRINT CSS (บังคับ layout ตอนพิมพ์ PDF)
+           ========================================== */
+        @media print {
+            @page { size: A4; margin: 8mm; }
+            body {
+                background: white;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            .brochure {
+                box-shadow: none; padding: 0; width: 100%; margin: 0;
+            }
+            
+            /* บังคับทุกส่วนไม่ให้ตัดหน้า */
+            .header, .property-images, .property-info, .location, 
+            .features, .investment, .contact, .footer {
+                page-break-inside: avoid; break-inside: avoid;
+            }
+
+            /* รูปภาพ */
+            .property-images { display: flex !important; gap: 5mm !important; justify-content: space-between; }
+            .main-image {
+                width: 62mm !important; height: 42mm !important; object-fit: cover;
+                box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid;
+            }
+
+            /* Info & Location 2 คอลัมน์ */
+            .property-info { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
+            .info-box { break-inside: avoid; page-break-inside: avoid; background-color: #f8f9fa !important; }
+            
+            .location ul { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
+            .location li { break-inside: avoid; page-break-inside: avoid; background: rgba(255,255,255,0.8) !important; }
+
+            /* Features & Investment */
+            .features-grid, .investment-grid {
+                display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 10px !important;
+            }
+            .feature-item, .investment-item { break-inside: avoid; page-break-inside: avoid; }
+            
+            .no-print { display: none !important; }
+        }
+
+        /* ==========================================
+           📱 MOBILE RESPONSIVE
+           ========================================== */
+        @media screen and (max-width: 768px) {
+            .brochure { width: 100%; padding: 10mm; }
+            .property-images, .property-info, .location ul, 
+            .features-grid, .investment-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 { font-size: 24px; }
+            .price-tag { font-size: 28px; padding: 12px 30px; }
+            .phone-number { font-size: 28px; padding: 12px 30px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="brochure">
+        <!-- Header -->
+        <div class="header">
+            <h1>🏢 ขายด่วน! สตูดิโอ พรปิยะแมนชัน</h1>
+            <div class="subtitle">บางโพ ชั้น 12 ทำเลทอง ติด MRT บางโพ</div>
+            <div class="price-tag">900,000 บาท</div>
+        </div>
+        
+        <!-- Image Gallery -->
+        <div class="property-images">
+            <img src="room1.jpeg" alt="ห้องนอน" class="main-image" onerror="this.src='https://via.placeholder.com/400x270/667eea/ffffff?text=ห้องนอน'">
+            <img src="room2.jpeg" alt="พื้นที่นั่งเล่น" class="main-image" onerror="this.src='https://via.placeholder.com/400x270/764ba2/ffffff?text=ห้องนั่งเล่น'">
+            <img src="room3.jpeg" alt="วิวระเบียง" class="main-image" onerror="this.src='https://via.placeholder.com/400x270/667eea/ffffff?text=วิวจากห้อง'">
+        </div>
+        
+        <!-- Property Info -->
+        <div class="property-info">
+            <div class="info-box">
+                <h3>📋 ข้อมูลห้อง</h3>
+                <p>
+                    <span class="label">โครงการ:</span> พรปิยะแมนชัน<br>
+                    <span class="label">ประเภท:</span> สตูดิโอ<br>
+                    <span class="label">ชั้น:</span> 12 (จาก 19 ชั้น)<br>
+                    <span class="label">พื้นที่:</span> ประมาณ 30-31 ตร.ม.<br>
+                    <span class="label">ปีสร้าง:</span> 2538
+                </p>
+            </div>
+            <div class="info-box">
+                <h3>🎯 จุดเด่น</h3>
+                <p>
+                    <span class="label">✓</span> ราคาถูกกว่าตลาด<br>
+                    <span class="label">✓</span> ชั้นสูง วิวสวย<br>
+                    <span class="label">✓</span> ใกล้ MRT บางโพ<br>
+                    <span class="label">✓</span> ทางด่วนศรีรัช<br>
+                    <span class="label">✓</span> ใกล้รัฐสภาใหม่
+                </p>
+            </div>
+        </div>
+        
+        <!-- Location -->
+        <div class="location">
+            <h3>📍 ทำเลทอง - การเดินทางสะดวก</h3>
+            <ul>
+                <li>ตรงข้ามโรงเรียนโยธินบูรณะ</li>
+                <li>ใกล้ตลาดเขมา</li>
+                <li>ใกล้โรงพยาบาลบางโพ</li>
+                <li>ใกล้ มจพ. (ม.เทคโนโลยีพระจอมเกล้าพระนครเหนือ)</li>
+                <li>ใกล้ MRT บางโพ</li>
+                <li>ทางขึ้น-ลง ทางด่วนศรีรัช</li>
+                <li>ใกล้รัฐสภาใหม่ (เกียกกาย)</li>
+            </ul>
+        </div>
+        
+        <!-- Features -->
+        <div class="features">
+            <div class="section-title">✨ สิ่งอำนวยความสะดวก</div>
+            <div class="features-grid">
+                <div class="feature-item">รปภ. 24 ชม.</div>
+                <div class="feature-item">ลิฟท์</div>
+                <div class="feature-item">ที่จอดรถ</div>
+                <div class="feature-item">ระบบรักษาความปลอดภัย</div>
+            </div>
+        </div>
+        
+        <!-- Investment -->
+        <div class="investment">
+            <h3>💰 เหมาะสำหรับการลงทุน</h3>
+            <p>ให้เช่าได้ง่าย ราคาค่าเช่าประมาณ 4,500-5,000 บาท/เดือน</p>
+            <div class="investment-grid">
+                <div class="investment-item">
+                    <div class="number">6-7%</div>
+                    <div class="text">ผลตอบแทนต่อปี</div>
+                </div>
+                <div class="investment-item">
+                    <div class="number">900K</div>
+                    <div class="text">ราคาขาย (บาท)</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact -->
+        <div class="contact">
+            <h2>📞 สนใจติดต่อสอบถาม</h2>
+            <div>เจ้าของขายโดยตรง - ราคาพิเศษ!</div>
+            <div class="phone-number">080-825-5506</div>
+            <div class="contact-note">
+                เอกสารสิทธิ์ครบถ้วน • โอนกรรมสิทธิ์ได้ทันที<br>
+                พร้อมอยู่/ให้เช่าได้ทันที
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            โบรชัวร์นี้จัดทำขึ้นเพื่อวัตถุประสงค์ในการขายทรัพย์สิน • ราคาและเงื่อนไขอาจมีการเปลี่ยนแปลง
+        </div>
+    </div>
+</body>
+</html>
